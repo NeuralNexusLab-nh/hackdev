@@ -1,0 +1,14 @@
+{
+  "name": "hackdev",
+  "version": "1.0.0",
+  "description": "Hacker's Best Tool.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "NeuralNexusLab NetHacker <hackdev@nethacker.cloud> (https://nethacker.cloud)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
