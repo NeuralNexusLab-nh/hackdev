@@ -27,10 +27,6 @@ app.get("/headers", (req, res) => {
   res.send(req.headers);
 });
 
-const fs = require("fs");
-const express = require("express");
-const app = express();
-
 app.get("/dh/register/:id", (req, res) => {
   let dh = JSON.parse(fs.readFileSync("./dh.json", "utf8"));
   if (dh[req.params.id]) {
