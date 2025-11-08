@@ -70,10 +70,10 @@ Routes:
 - Method: GET
 - Description: Fetches a remote URL from the server and returns its text content.
 - Example URL: `https://hackdev.nethacker.cloud/fetch?url=https://example.com`
-- ⚠️ Warning: Use with caution. This route can potentially be used for SSRF attacks.
+- ⚠️ Warning: Do not use this route to d **SSRF Attack**, server isn't mine.
 
 Notes:
- - Do not use `/fetch` to **SSRF Attack**, server isn't mine.
+ - Do not use `/fetch` to do **SSRF Attack**, server isn't mine.
  - /dh/* router just store request's info.
  - Xss.js only run **alert()** function.
  - Made by NeuralNexusLab NetHacker
