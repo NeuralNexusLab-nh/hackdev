@@ -75,5 +75,5 @@ Routes:
 Notes:
  - Do not use `/fetch` to **SSRF Attack**, server isn't mine.
  - /dh/* router just store request's info.
- - Xss.js just do **alert()** function.
+ - Xss.js only run **alert()** function.
  - Made by NeuralNexusLab NetHacker
