@@ -1,4 +1,4 @@
-HackDev API
+HackDev API Document
 
 This is a simple Express.js-based HTTP service deployed at: https://hackdev.nethacker.cloud
 
@@ -73,6 +73,7 @@ Routes:
 - ⚠️ Warning: Use with caution. This route can potentially be used for SSRF attacks.
 
 Notes:
--Do not use `/fetch` to **SSRF Attack**, server isn't mine.
--/dh/* router just store request's info.
--Made by NeuralNexusLab NetHacker
+ - Do not use `/fetch` to **SSRF Attack**, server isn't mine.
+ - /dh/* router just store request's info.
+ - Xss.js just do **alert()** function.
+ - Made by NeuralNexusLab NetHacker
