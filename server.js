@@ -70,6 +70,15 @@ app.get("/dh/:id", (req, res) => {
   }
 });
 
+app.get("/dh/info/:id", (req, res) => {
+  var dh = JSON.parse(fs.readFileSync("./dh.json"));
+  if (dh[req.params.id]) {
+    res.json(dh[req.params.id]);
+  } else {
+    res.status(404).send("ERROR 404: ID not found");
+  }
+});
+
 app.get("/xss.js", (req, res) => {
   res.sendFile(path.join(__dirname, "xss.js"));
 });
