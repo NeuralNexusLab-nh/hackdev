@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.send(`<h1>HackDev</h1>`);
+  res.send(`<!doctype html><head><title>HackDev</title></head><body><h1>HackDev</h1></body>`);
 });
 
 app.get("/ip", (req, res) => {
