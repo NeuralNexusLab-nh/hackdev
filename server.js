@@ -6,8 +6,9 @@ const app = express();
 app.set("trust proxy", true);
 
 app.use((req, res, next) => {
-  res.set("X-Team", "NetHacker");
-  res.set("X-HTTP-REQUEST-ID", Math.floor(Math.random() * 1000) * Math.floor(Math.random() * 1000))
+  res.set("X-Developer", "NetHacker");
+  res.set("X-HTTP-REQUEST-ID", Math.floor(Math.random() * 1000) * Math.floor(Math.random() * 1000));
+  res.set("Access-Control-Allow-Origin", "*");
   next();
 });
 
