@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.send(`<!doctype html><head><title>HackDev</title></head><body><h1>HackDev</h1></body>`);
+  res.send(`<!doctype html><head><title>HackDev</title></head><body><h1>HackDev</h1><br><a href='https://github.com/NeuralNexusLab-nh/hackdev' target='_blank'>HackDev on Github</a></body>`);
 });
 
 app.get("/ip", (req, res) => {
